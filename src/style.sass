@@ -1,0 +1,65 @@
+$white: hsl(0, 0%, 100%)
+$lightGrey: hsl(212, 45%, 89%)
+$grayishBlue: hsl(220, 15%, 55%)
+$darkBlue: hsl(218, 44%, 22%)
+
+$componentWidth: 300px
+$borderRadius: 20px
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body
+    background-color: $lightGrey
+    width: 100%
+    height: 100vh
+    font-family: 'Outfit', sans-serif
+
+#root
+    width: 100%
+    height: 100vh
+
+.page
+    width: 100%
+    height: 100vh
+
+main
+    height: 97%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: auto
+    font-family: 'Outfit', sans-serif
+
+.component
+    width: $componentWidth
+    height: 450px
+    margin: auto
+    background-color: $white
+    border-radius: $borderRadius
+    text-align: center
+    img
+        width: $componentWidth - 30
+        margin-top: 15px
+        border-radius: $borderRadius
+    h1
+        font-size: 1.3em
+        width: $componentWidth - 30
+        margin: 10px auto
+        color: $darkBlue
+    p
+        width: $componentWidth - 50
+        margin: 10px auto
+        color: $grayishBlue
+        font-weight: 400
+        font-size: 0.9em
+
+footer
+    height: 3%
+    width: 100%
+    text-align: center
+    color: $grayishBlue
+    a
+        text-decoration: none
+        color: $darkBlue
+
